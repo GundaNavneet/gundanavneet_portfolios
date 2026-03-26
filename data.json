@@ -192,6 +192,15 @@
       "credential_id": "9ED050BA70298DD8",
       "credential_url": "https://learn.microsoft.com/en-us/users/gundanavneet-9710/credentials/9ed050ba70298dd8?ref=https%3A%2F%2Fwww.linkedin.com%2F",
       "icon": "azure"
+    },
+    {
+      "id": 1774543048632,
+      "name": "GITHUB Actions",
+      "issuer": "",
+      "date": "2026-03",
+      "credential_id": "",
+      "credential_url": "https://aptean.udemy.com/certificate/UC-03a45740-173d-4aa3-ba7e-1afee60c8348/",
+      "icon": "default"
     }
   ],
   "projects": [
@@ -279,8 +288,8 @@
   ],
   "stats": {
     "years_experience": 5,
-    "projects_completed": 20,
-    "certifications": 3,
+    "projects_completed": 10,
+    "certifications": 4,
     "clouds_managed": 2
   },
   "blog": [
