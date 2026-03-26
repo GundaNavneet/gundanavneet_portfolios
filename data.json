@@ -139,6 +139,24 @@
         "name": "SonarQube",
         "level": 78
       }
+    ],
+    "AI Technologies & Tools": [
+      {
+        "name": "LLMs & Assistants: OpenAI (ChatGPT), Google Gemini, Anthropic Claude",
+        "level": 90
+      },
+      {
+        "name": "New SkillCode Generation & Review: GitHub Copilot, ChatGPT for scripting, debugging, and automation",
+        "level": 90
+      },
+      {
+        "name": "Monitoring & AIOps: AI-driven log analysis, anomaly detection, and alert optimization",
+        "level": 90
+      },
+      {
+        "name": "AI Agents & Workflows: Building and deploying AI agents using APIs, automation tools, and orchestration frameworks",
+        "level": 90
+      }
     ]
   },
   "certifications": [
