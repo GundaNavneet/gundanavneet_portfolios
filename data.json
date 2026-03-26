@@ -57,30 +57,84 @@
   ],
   "skills": {
     "Cloud & Infrastructure": [
-      { "name": "Microsoft Azure", "level": 95 },
-      { "name": "Docker", "level": 90 },
-      { "name": "Kubernetes (AKS)", "level": 88 },
-      { "name": "Terraform", "level": 85 },
-      { "name": "Ansible", "level": 80 }
+      {
+        "name": "Microsoft Azure",
+        "level": 95
+      },
+      {
+        "name": "Docker",
+        "level": 90
+      },
+      {
+        "name": "Kubernetes (AKS)",
+        "level": 88
+      },
+      {
+        "name": "Terraform",
+        "level": 85
+      },
+      {
+        "name": "Ansible",
+        "level": 80
+      }
     ],
     "CI/CD & DevOps": [
-      { "name": "Azure DevOps", "level": 95 },
-      { "name": "GitHub Actions", "level": 92 },
-      { "name": "Jenkins", "level": 80 },
-      { "name": "ArgoCD / GitOps", "level": 82 },
-      { "name": "Docker Compose", "level": 88 }
+      {
+        "name": "Azure DevOps",
+        "level": 95
+      },
+      {
+        "name": "GitHub Actions",
+        "level": 92
+      },
+      {
+        "name": "Jenkins",
+        "level": 80
+      },
+      {
+        "name": "ArgoCD / GitOps",
+        "level": 82
+      },
+      {
+        "name": "Docker Compose",
+        "level": 88
+      }
     ],
     "Scripting & Languages": [
-      { "name": "Bash / Shell", "level": 90 },
-      { "name": "Python", "level": 78 },
-      { "name": "PowerShell", "level": 85 },
-      { "name": "YAML", "level": 95 }
+      {
+        "name": "Bash / Shell",
+        "level": 90
+      },
+      {
+        "name": "Python",
+        "level": 78
+      },
+      {
+        "name": "PowerShell",
+        "level": 85
+      },
+      {
+        "name": "YAML",
+        "level": 95
+      }
     ],
     "Monitoring & Security": [
-      { "name": "Prometheus & Grafana", "level": 82 },
-      { "name": "Azure Monitor", "level": 88 },
-      { "name": "ELK Stack", "level": 75 },
-      { "name": "SonarQube", "level": 78 }
+      {
+        "name": "Prometheus & Grafana",
+        "level": 82
+      },
+      {
+        "name": "Azure Monitor",
+        "level": 88
+      },
+      {
+        "name": "ELK Stack",
+        "level": 75
+      },
+      {
+        "name": "SonarQube",
+        "level": 78
+      }
     ]
   },
   "certifications": [
@@ -117,7 +171,12 @@
       "id": 1,
       "title": "Adaptive Traffic Signal Control System",
       "description": "Developed an intelligent traffic management system using machine learning algorithms to dynamically adjust signal timings based on real-time traffic density, reducing average wait times significantly.",
-      "tech": ["Python", "Machine Learning", "IoT", "Computer Vision"],
+      "tech": [
+        "Python",
+        "Machine Learning",
+        "IoT",
+        "Computer Vision"
+      ],
       "start_date": "2019-07",
       "end_date": "2020-06",
       "github_url": "",
@@ -128,7 +187,12 @@
       "id": 2,
       "title": "Rural Water Supply Scheme",
       "description": "Designed and implemented an automated monitoring system for rural water supply infrastructure, enabling remote tracking of pump performance, water levels, and distribution efficiency.",
-      "tech": ["IoT", "Embedded Systems", "Data Analytics", "Automation"],
+      "tech": [
+        "IoT",
+        "Embedded Systems",
+        "Data Analytics",
+        "Automation"
+      ],
       "start_date": "2016-11",
       "end_date": "2017-04",
       "github_url": "",
@@ -139,7 +203,13 @@
       "id": 3,
       "title": "DevOps Pipeline Automation Framework",
       "description": "Built a reusable CI/CD pipeline framework using GitHub Actions and Azure DevOps for containerized microservices, including automated testing, security scanning, and multi-environment deployments.",
-      "tech": ["GitHub Actions", "Azure DevOps", "Docker", "Kubernetes", "Terraform"],
+      "tech": [
+        "GitHub Actions",
+        "Azure DevOps",
+        "Docker",
+        "Kubernetes",
+        "Terraform"
+      ],
       "start_date": "2023-01",
       "end_date": "2023-08",
       "github_url": "https://github.com/GundaNavneet",
