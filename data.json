@@ -295,44 +295,14 @@
   "blog": [
     {
       "id": 1,
-      "title": "Getting Started with Kubernetes on Azure AKS",
-      "excerpt": "A hands-on guide to deploying your first containerized application on Azure Kubernetes Service, covering cluster setup, deployments, and autoscaling.",
-      "date": "2026-03-01",
+      "title": "AI-Driven Supply Chain Optimization: Bridging DevOps and Demand Planning",
+      "excerpt": "A practical deep dive into how DevOps practices combined with AI can transform supply chain systems, enabling real-time demand forecasting, automated deployments, and scalable infrastructure for high-demand scenarios.",
+      "date": "2026-03-15",
       "read_time": "8 min read",
       "tags": [
-        "Kubernetes",
-        "Azure",
-        "AKS",
-        "DevOps"
+        "Supplychainmanagement"
       ],
-      "url": ""
-    },
-    {
-      "id": 2,
-      "title": "CI/CD Best Practices with Azure DevOps",
-      "excerpt": "Lessons learned from building production-grade pipelines — from branch strategies and environment gates to rollback automation and deployment approvals.",
-      "date": "2026-02-10",
-      "read_time": "6 min read",
-      "tags": [
-        "Azure DevOps",
-        "CI/CD",
-        "Automation"
-      ],
-      "url": ""
-    },
-    {
-      "id": 3,
-      "title": "Infrastructure as Code: Terraform vs Bicep",
-      "excerpt": "A practical comparison of Terraform and Azure Bicep for provisioning Azure infrastructure — when to use each, and how to decide for your team.",
-      "date": "2026-01-15",
-      "read_time": "7 min read",
-      "tags": [
-        "Terraform",
-        "Bicep",
-        "IaC",
-        "Azure"
-      ],
-      "url": ""
+      "url": "https://supplychaintechdiaries.blogspot.com/2026/03/ai-driven-supply-chain-optimization.html"
     }
   ]
 }
