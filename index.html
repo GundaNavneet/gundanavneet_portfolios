@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navneet Gunda | Senior DevOps Engineer</title>
+  <meta name="description" content="Senior DevOps Engineer specializing in Azure cloud, Kubernetes, CI/CD automation and infrastructure as code."/>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+  <!-- ========== PARTICLES BACKGROUND ========== -->
+  <div id="particles-js"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-text">NG<span class="dot">.</span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="admin.html" class="nav-link admin-link"><i class="fas fa-pen-to-square"></i> Edit</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-greeting">👋 Hello, I'm</div>
+      <h1 class="hero-name" id="heroName">Navneet Gunda</h1>
+      <div class="hero-title">
+        <span class="static-text">I'm a </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-desc" id="heroBio">Passionate Senior DevOps Engineer building scalable cloud infrastructure and automation pipelines.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-socials" id="heroSocials">
+        <a href="https://www.linkedin.com/in/navneetgunda/" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/GundaNavneet" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="hero-image-wrapper">
+      <div class="hero-image-ring"></div>
+      <div class="hero-avatar" id="heroAvatar">
+        <img id="profileImg" src="" alt="Navneet Gunda" onerror="this.style.display='none'; document.getElementById('avatarInitials').style.display='flex'"/>
+        <div class="avatar-initials" id="avatarInitials">NG</div>
+      </div>
+      <div class="floating-badge badge-1"><i class="fab fa-microsoft"></i> Azure Expert</div>
+      <div class="floating-badge badge-2"><i class="fab fa-docker"></i> Docker</div>
+      <div class="floating-badge badge-3"><i class="fas fa-dharmachakra"></i> Kubernetes</div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get To Know Me</span>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-right">
+          <p id="aboutBio" class="about-bio">Loading...</p>
+          <div class="about-details" id="aboutDetails">
+            <div class="detail-item"><i class="fas fa-map-marker-alt"></i><span id="aboutLocation">Bengaluru, India</span></div>
+            <div class="detail-item"><i class="fas fa-briefcase"></i><span id="aboutCompany">Logility (Aptean)</span></div>
+            <div class="detail-item"><i class="fas fa-envelope"></i><span id="aboutEmail">navneet.gunda@example.com</span></div>
+            <div class="detail-item"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/navneetgunda/" target="_blank" id="aboutLinkedin">linkedin.com/in/navneetgunda</a></div>
+          </div>
+          <a href="#" class="btn btn-primary" id="resumeBtn" style="display:none"><i class="fas fa-download"></i> Download Resume</a>
+        </div>
+        <div class="stats-grid" data-aos="fade-left">
+          <div class="stat-card">
+            <div class="stat-number" id="statYears">5+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="statProjects">20+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="statCerts">3</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="statClouds">2</div>
+            <div class="stat-label">Cloud Platforms</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="section section-dark" id="experience">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Work <span class="highlight">Experience</span></h2>
+      </div>
+      <div class="timeline" id="experienceTimeline">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My Toolkit</span>
+        <h2 class="section-title">Skills & <span class="highlight">Technologies</span></h2>
+      </div>
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Achievements</span>
+        <h2 class="section-title">Certifi<span class="highlight">cations</span></h2>
+      </div>
+      <div class="certs-grid" id="certsGrid">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="section section-dark" id="education">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">Edu<span class="highlight">cation</span></h2>
+      </div>
+      <div class="education-list" id="educationList">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <p class="contact-text">I'm always open to discussing new opportunities, interesting projects, or just a friendly chat about DevOps and cloud technologies.</p>
+          <div class="contact-links" id="contactLinks">
+            <a href="#" class="contact-card" id="contactEmail"><i class="fas fa-envelope"></i><div><span>Email</span><small id="contactEmailVal">—</small></div></a>
+            <a href="https://www.linkedin.com/in/navneetgunda/" target="_blank" class="contact-card"><i class="fab fa-linkedin-in"></i><div><span>LinkedIn</span><small>navneetgunda</small></div></a>
+            <a href="https://github.com/GundaNavneet" target="_blank" class="contact-card"><i class="fab fa-github"></i><div><span>GitHub</span><small>GundaNavneet</small></div></a>
+          </div>
+        </div>
+        <div class="contact-illustration" data-aos="fade-left">
+          <div class="terminal">
+            <div class="terminal-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="terminal-title">bash</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> whoami</p>
+              <p class="output">navneet_gunda</p>
+              <p><span class="prompt">$</span> cat role.txt</p>
+              <p class="output">Senior DevOps Engineer</p>
+              <p><span class="prompt">$</span> echo $PASSION</p>
+              <p class="output">Cloud · Automation · DevOps</p>
+              <p><span class="prompt">$</span> git log --oneline -1</p>
+              <p class="output">🚀 always shipping greatness</p>
+              <p><span class="prompt blink">$</span> <span class="cursor-blink">_</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Designed & Built by <span class="highlight" id="footerName">Navneet Gunda</span></p>
+      <p class="footer-sub">Senior DevOps Engineer · Bengaluru, India</p>
+      <div class="footer-socials" id="footerSocials">
+        <a href="https://www.linkedin.com/in/navneetgunda/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/GundaNavneet" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <a href="admin.html" class="footer-edit-link"><i class="fas fa-pen"></i> Edit Portfolio</a>
+    </div>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

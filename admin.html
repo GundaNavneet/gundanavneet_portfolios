@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Admin — Navneet Gunda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/css/admin.css"/>
+</head>
+<body>
+
+  <!-- ===== LOGIN SCREEN ===== -->
+  <div class="login-screen" id="loginScreen">
+    <div class="login-card">
+      <div class="login-logo">NG<span>.</span></div>
+      <h1>Portfolio Admin</h1>
+      <p>Enter your GitHub Personal Access Token to edit your portfolio content.</p>
+      <div class="login-form">
+        <div class="form-group">
+          <label>GitHub Owner</label>
+          <input type="text" id="loginOwner" value="GundaNavneet" placeholder="GitHub username"/>
+        </div>
+        <div class="form-group">
+          <label>Repository Name</label>
+          <input type="text" id="loginRepo" value="gundanavneet_portfilos" placeholder="Repo name"/>
+        </div>
+        <div class="form-group">
+          <label>Personal Access Token <a href="https://github.com/settings/tokens" target="_blank" class="hint-link">(Generate one here)</a></label>
+          <div class="input-group">
+            <input type="password" id="loginToken" placeholder="ghp_xxxxxxxxxxxx"/>
+            <button type="button" onclick="togglePassword('loginToken')" class="icon-btn"><i class="fas fa-eye"></i></button>
+          </div>
+          <small class="hint">Token needs <code>repo</code> scope. It's stored in session only — never saved to disk.</small>
+        </div>
+        <button class="btn btn-primary full-width" id="loginBtn" onclick="handleLogin()">
+          <i class="fas fa-sign-in-alt"></i> Connect & Edit
+        </button>
+        <div class="login-error" id="loginError"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ADMIN PANEL ===== -->
+  <div class="admin-panel hidden" id="adminPanel">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">NG<span>.</span> Admin</div>
+        <button class="sidebar-close" onclick="toggleSidebar()"><i class="fas fa-times"></i></button>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active" data-section="basic" onclick="showSection('basic',this)">
+          <i class="fas fa-user"></i> Basic Info
+        </a>
+        <a href="#" class="nav-item" data-section="picture" onclick="showSection('picture',this)">
+          <i class="fas fa-camera"></i> Profile Picture
+        </a>
+        <a href="#" class="nav-item" data-section="experience" onclick="showSection('experience',this)">
+          <i class="fas fa-briefcase"></i> Experience
+        </a>
+        <a href="#" class="nav-item" data-section="skills" onclick="showSection('skills',this)">
+          <i class="fas fa-code"></i> Skills
+        </a>
+        <a href="#" class="nav-item" data-section="projects" onclick="showSection('projects',this)">
+          <i class="fas fa-rocket"></i> Projects
+        </a>
+        <a href="#" class="nav-item" data-section="certifications" onclick="showSection('certifications',this)">
+          <i class="fas fa-certificate"></i> Certifications
+        </a>
+        <a href="#" class="nav-item" data-section="education" onclick="showSection('education',this)">
+          <i class="fas fa-graduation-cap"></i> Education
+        </a>
+        <a href="#" class="nav-item" data-section="stats" onclick="showSection('stats',this)">
+          <i class="fas fa-chart-bar"></i> Stats
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="index.html" target="_blank" class="nav-item"><i class="fas fa-eye"></i> Preview Site</a>
+        <button class="nav-item logout" onclick="handleLogout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="admin-main">
+      <div class="admin-topbar">
+        <button class="hamburger-btn" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
+        <div class="topbar-title" id="topbarTitle">Basic Info</div>
+        <div class="topbar-actions">
+          <span class="save-status" id="saveStatus"></span>
+          <button class="btn btn-primary" id="saveBtn" onclick="saveChanges()">
+            <i class="fas fa-save"></i> Save & Deploy
+          </button>
+        </div>
+      </div>
+
+      <div class="admin-content" id="adminContent">
+        <!-- Sections rendered by JS -->
+      </div>
+    </main>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>
