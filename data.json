@@ -243,12 +243,32 @@
     {
       "id": 1,
       "degree": "Bachelor of Technology",
-      "field": "Computer Science & Engineering",
+      "field": "Civil Engineering",
       "institution": "Vignan's Institute of Information Technology",
       "location": "Visakhapatnam, India",
       "start_year": "2017",
       "end_year": "2020",
-      "grade": ""
+      "grade": "7.88"
+    },
+    {
+      "id": 1774536615045,
+      "degree": "Diploma",
+      "field": "Civil Engineering",
+      "institution": "Sanketika Polytechnic college",
+      "location": "Visakhapatnam, India",
+      "start_year": "2014",
+      "end_year": "2017",
+      "grade": "76.35"
+    },
+    {
+      "id": 1774536674933,
+      "degree": "10th",
+      "field": "",
+      "institution": "BBV High School",
+      "location": "Visakhapatnam, India",
+      "start_year": "",
+      "end_year": "2014",
+      "grade": "7"
     }
   ],
   "stats": {
