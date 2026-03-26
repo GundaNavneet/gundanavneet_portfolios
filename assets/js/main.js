@@ -34,6 +34,7 @@ function renderAll() {
   renderProjects();
   renderCertifications();
   renderEducation();
+  renderBlog();
   renderContact();
 }
 
@@ -237,6 +238,30 @@ function renderEducation() {
         <div class="edu-institution">${e.institution} · ${e.location}</div>
         <div class="edu-meta">${e.start_year} – ${e.end_year} ${e.grade ? '· ' + e.grade : ''}</div>
       </div>
+    </div>
+  `).join('');
+}
+
+/* ===== BLOG ===== */
+function renderBlog() {
+  const container = document.getElementById('blogGrid');
+  if (!container || !portfolioData.blog || !portfolioData.blog.length) {
+    if (container) container.closest('section').style.display = 'none';
+    return;
+  }
+
+  container.innerHTML = portfolioData.blog.map((post, i) => `
+    <div class="blog-card" data-aos="fade-up" data-aos-delay="${i * 100}">
+      <div class="blog-meta">
+        <span class="blog-date"><i class="fas fa-calendar-alt"></i> ${formatDate(post.date)}</span>
+        <span class="blog-read-time"><i class="fas fa-clock"></i> ${post.read_time || '5 min read'}</span>
+      </div>
+      <h3 class="blog-title">${post.title}</h3>
+      <p class="blog-excerpt">${post.excerpt}</p>
+      <div class="blog-tags">
+        ${(post.tags || []).map(t => `<span class="blog-tag">${t}</span>`).join('')}
+      </div>
+      ${post.url ? `<a href="${post.url}" target="_blank" rel="noopener noreferrer" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>` : ''}
     </div>
   `).join('');
 }
