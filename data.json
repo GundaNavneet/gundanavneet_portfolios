@@ -27,15 +27,21 @@
       "title": "Senior DevOps Engineer",
       "company": "Logility (Aptean)",
       "location": "Bengaluru, Karnataka, India",
-      "start_date": "2022-01",
+      "start_date": "2025-09",
       "end_date": "",
       "current": true,
-      "description": "Leading DevOps practices for supply chain planning platform. Architecting and managing Azure cloud infrastructure, designing CI/CD pipelines using Azure DevOps and GitHub Actions, implementing containerization with Docker & Kubernetes, and driving AI/MLOps evolution across the platform.",
+      "description": "Logility: AI-Powered Supply Chain Planning & Optimization \n\nLogility is a comprehensive, AI-first supply chain planning platform designed to accelerate digital transformation, enhance decision-making, and build resilient, sustainable supply chains. As a subsidiary of Aptean (formerly American Software, Inc.),\n\nBuilt and managed CI/CD pipelines using Azure DevOps and GitHub, automating build, test, and deployments\nMigrated legacy pipelines and integrated automated QA testing for faster, reliable releases\nManaged multi-environment deployments (Dev, QA, UAT, Prod) with high stability\nWorked on cloud infrastructure using Microsoft Azure\nAutomated workflows using scripting (Python, Bash, PowerShell)\nLeveraged AI tools to build and deploy AI agents, improving automation and operational efficiency\nMonitored systems and resolved deployment issues ensuring high availability\n",
       "highlights": [
-        "Architected multi-region Azure infrastructure serving 100+ enterprise clients",
-        "Reduced deployment time by 60% through automated CI/CD pipelines",
-        "Implemented GitOps workflows with ArgoCD for Kubernetes deployments",
-        "Led cloud cost optimization initiatives saving 35% monthly Azure spend"
+        "Built scalable CI/CD pipelines using Azure DevOps and GitHub",
+        "Migrated legacy release pipelines to modern automated workflows",
+        "Enabled end-to-end automation for build, test, and deployment processes",
+        "Managed multi-environment releases (Dev, QA, UAT, Prod) with high reliability",
+        "Worked on cloud infrastructure using Microsoft Azure",
+        "Automated operational tasks using Python, Bash, and PowerShell",
+        "Integrated automated QA testing into CI/CD pipelines",
+        "Leveraged AI tools to build and deploy AI agents for process automation",
+        "Improved deployment efficiency and reduced manual intervention",
+        "Ensured system stability through monitoring and rapid issue resolution"
       ]
     },
     {
@@ -43,15 +49,15 @@
       "title": "DevOps Engineer",
       "company": "Infosys",
       "location": "Bengaluru, Karnataka, India",
-      "start_date": "2020-06",
-      "end_date": "2021-12",
+      "start_date": "2022-01",
+      "end_date": "2025-06",
       "current": false,
-      "description": "Built and maintained CI/CD pipelines, managed cloud infrastructure on Azure, and automated deployment workflows for enterprise clients. Collaborated with development teams to implement DevOps best practices.",
+      "description": "• Automated infrastructure provisioning with Terraform and Ansible, achieving a 60% reduction in manual effort.  \n• Developed CI/CD pipelines using Jenkins and Azure DevOps, enhancing deployment frequency from weekly to daily.  \n• Integrated centralized logging and monitoring with ELK and Azure Monitor for improved system visibility.\nAzure services, including Compute, Networking, Storage, AKS, App Services, and Serverless.\nimplementing and maintaining security best practices, such as identity management and RBAC.\ntroubleshooting production issues and driving incident resolution.",
       "highlights": [
-        "Designed and implemented automated CI/CD pipelines for 10+ projects",
-        "Managed Azure infrastructure including VMs, AKS, and networking",
-        "Implemented infrastructure as code using Terraform and Ansible",
-        "Reduced manual deployment effort by 80% through automation"
+        "• Designed and deployed scalable CI/CD pipelines in Azure DevOps, significantly enhancing deployment frequency.  ",
+        "• Implemented Infrastructure as Code (IaC) using Terraform and ARM templates, automating provisioning processes.  ",
+        "• Managed containerized applications with Docker and Kubernetes (AKS), ensuring efficient resource utilization.  ",
+        "• Integrated monitoring solutions with Azure Monitor and ELK Stack, improving system reliability and performance."
       ]
     }
   ],
