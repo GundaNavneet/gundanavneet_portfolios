@@ -59,23 +59,27 @@
     "Cloud & Infrastructure": [
       {
         "name": "Microsoft Azure",
-        "level": 95
+        "level": 100
       },
       {
         "name": "Docker",
-        "level": 90
+        "level": 100
       },
       {
         "name": "Kubernetes (AKS)",
-        "level": 88
+        "level": 100
       },
       {
         "name": "Terraform",
-        "level": 85
+        "level": 100
       },
       {
         "name": "Ansible",
-        "level": 80
+        "level": 100
+      },
+      {
+        "name": "GITHUB",
+        "level": 100
       }
     ],
     "CI/CD & DevOps": [
