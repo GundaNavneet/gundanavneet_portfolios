@@ -137,7 +137,7 @@ function showSection(section, el) {
   const titles = {
     basic: 'Basic Info', picture: 'Profile Picture', experience: 'Experience',
     skills: 'Skills', projects: 'Projects', certifications: 'Certifications',
-    education: 'Education', stats: 'Stats & Numbers'
+    education: 'Education', blog: 'Blog Posts', stats: 'Stats & Numbers'
   };
   document.getElementById('topbarTitle').textContent = titles[section] || section;
   renderSection(section);
@@ -159,6 +159,7 @@ function renderSection(section) {
     projects: renderProjectsSection,
     certifications: renderCertsSection,
     education: renderEducationSection,
+    blog: renderBlogSection,
     stats: renderStatsSection
   };
   content.innerHTML = '';
@@ -706,6 +707,74 @@ function removeEducation(i) {
   if (!confirm('Remove this education entry?')) return;
   currentData.education.splice(i, 1);
   renderEducationSection();
+}
+
+/* ===== BLOG ===== */
+function renderBlogSection() {
+  if (!currentData.blog) currentData.blog = [];
+  const c = document.getElementById('adminContent');
+  c.innerHTML = `
+    <div class="panel-header">
+      <h2>Blog Posts</h2>
+      <p>Add, edit or remove your personal blog posts.</p>
+    </div>
+    <div id="blogList">
+      ${currentData.blog.map((post, i) => buildBlogCard(post, i)).join('')}
+    </div>
+    <button class="add-btn" onclick="addBlogPost()"><i class="fas fa-plus"></i> Add Blog Post</button>
+  `;
+}
+
+function buildBlogCard(post, i) {
+  const tags = (post.tags || []).join(', ');
+  return `
+    <div class="list-item" id="blogCard_${i}">
+      <div class="list-item-header">
+        <div>
+          <div class="list-item-title">${esc(post.title)}</div>
+          <div class="list-item-subtitle">${post.date || ''} ${post.read_time ? '· ' + esc(post.read_time) : ''}</div>
+        </div>
+        <button class="icon-btn-sm danger" onclick="removeBlogPost(${i})"><i class="fas fa-trash"></i></button>
+      </div>
+      <div class="form-grid">
+        <div class="form-group full"><label>Title</label><input type="text" id="blog_title_${i}" value="${esc(post.title)}"/></div>
+        <div class="form-group full"><label>Excerpt / Summary</label><textarea id="blog_excerpt_${i}" rows="3">${esc(post.excerpt)}</textarea></div>
+        <div class="form-group"><label>Date</label><input type="date" id="blog_date_${i}" value="${post.date || ''}"/></div>
+        <div class="form-group"><label>Read Time (e.g. 5 min read)</label><input type="text" id="blog_readtime_${i}" value="${esc(post.read_time || '')}"/></div>
+        <div class="form-group full"><label>Blog Post URL (Medium, Dev.to, Hashnode, etc.)</label><input type="url" id="blog_url_${i}" value="${esc(post.url || '')}" placeholder="https://medium.com/@you/your-post"/></div>
+        <div class="form-group full"><label>Tags (comma-separated)</label><input type="text" id="blog_tags_${i}" value="${esc(tags)}" placeholder="Kubernetes, DevOps, Azure"/></div>
+      </div>
+      <button class="btn btn-outline btn-sm" onclick="saveBlogPost(${i})" style="margin-top:12px"><i class="fas fa-check"></i> Apply Changes</button>
+    </div>
+  `;
+}
+
+function saveBlogPost(i) {
+  const post = currentData.blog[i];
+  post.title     = val(`blog_title_${i}`);
+  post.excerpt   = val(`blog_excerpt_${i}`);
+  post.date      = val(`blog_date_${i}`);
+  post.read_time = val(`blog_readtime_${i}`);
+  post.url       = val(`blog_url_${i}`);
+  post.tags      = val(`blog_tags_${i}`).split(',').map(t => t.trim()).filter(Boolean);
+  showToast('Blog post updated. Save & Deploy when ready.', 'info');
+}
+
+function addBlogPost() {
+  if (!currentData.blog) currentData.blog = [];
+  currentData.blog.unshift({
+    id: Date.now(), title: 'New Blog Post', excerpt: '',
+    date: new Date().toISOString().split('T')[0],
+    read_time: '5 min read', tags: [], url: ''
+  });
+  renderBlogSection();
+  showToast('New blog post added. Fill in the details.', 'info');
+}
+
+function removeBlogPost(i) {
+  if (!confirm('Remove this blog post?')) return;
+  currentData.blog.splice(i, 1);
+  renderBlogSection();
 }
 
 /* ===== STATS ===== */
