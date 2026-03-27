@@ -207,13 +207,8 @@
     {
       "id": 1,
       "title": "Adaptive Traffic Signal Control System",
-      "description": "Developed an intelligent traffic management system using machine learning algorithms to dynamically adjust signal timings based on real-time traffic density, reducing average wait times significantly.",
-      "tech": [
-        "Python",
-        "Machine Learning",
-        "IoT",
-        "Computer Vision"
-      ],
+      "description": "🚦 Adaptive Traffic Control System (ATCS) – Overview\n\nAdaptive Traffic Control Systems (ATCS) are intelligent traffic management solutions that dynamically adjust signal timings based on real-time traffic conditions. Unlike traditional fixed-time signals, ATCS uses sensors, controllers, and centralized software to optimize traffic flow efficiently.\n\nKey Components:\n\nVehicle Detectors: Capture live traffic data such as volume, speed, and density\nIntersection Controllers: Execute signal timing at junctions\nCommunication Network: Connects field devices to the control center\nCentral Control System: Processes data and optimizes traffic signals\nSignal Lamps (LED): Implement traffic control actions\n\nBenefits:\n\nReduced congestion and travel delays\nImproved road capacity without infrastructure expansion\nEnhanced safety with smoother traffic flow\nLower fuel consumption and emissions\nHigh adaptability to real-time traffic scenarios\n\n👉 ATCS represents a shift from static traffic systems to data-driven, real-time optimization, playing a key role in modern smart city infrastructure.",
+      "tech": [],
       "start_date": "2019-07",
       "end_date": "2020-06",
       "github_url": "",
